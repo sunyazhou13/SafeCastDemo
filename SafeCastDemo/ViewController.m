@@ -6,7 +6,7 @@
 //
 
 #import "ViewController.h"
-
+#import <UIKit/UIKit.h>
 @interface ViewController ()
 
 @end
@@ -16,6 +16,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    ViewController *vc = YZ_SAFE_CAST(self, UIViewController);
+    if (vc) {
+        
+    } else {
+        
+    }
 }
 
 
